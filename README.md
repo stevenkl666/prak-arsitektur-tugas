@@ -48,7 +48,10 @@ Alur MVC: `FilterChip.onSelected` memanggil `_ubahFilter` di `_LayarMvcState`, l
 | MVC   | `setState(() => _pengendali.ubahFilter(nilai))` di `_LayarMvcState._ubahFilter`          | Menghapus sementara `setState` di `_ubahFilter`, lalu menjalankan `flutter test test/filter_test.dart`         | [ISI HASIL: test MVC gagal, `Rancang UI Flutter` masih tampil setelah filter diaktifkan. Tempel potongan keluaran terminal.]  |
 | MVVM  | `notifyListeners()` di `TugasViewModel.ubahFilter`, yang didengarkan `ListenableBuilder` | Menghapus sementara `notifyListeners()` di `ubahFilter`, lalu menjalankan `flutter test test/filter_test.dart` | [ISI HASIL: test MVVM gagal, `Rancang UI Flutter` masih tampil setelah filter diaktifkan. Tempel potongan keluaran terminal.] |
 
-Penjelasan: pada kedua versi, `_hanyaBelumSelesai` tetap berubah di Controller atau ViewModel, tetapi UI tidak dibangun ulang sehingga daftar yang terlihat tidak ikut berubah. Setelah baris dikembalikan, kedua test lulus kembali ([ISI: keluaran `flutter test` setelah pemulihan]).
+Penjelasan: pada kedua versi, `_hanyaBelumSelesai` tetap berubah di Controller atau ViewModel, tetapi UI tidak dibangun ulang sehingga daftar yang terlihat tidak ikut berubah. Setelah baris dikembalikan, kedua test lulus kembali
+
+C:\ppb\prak_arsitektur_tugas>flutter test
+00:10 +7: All tests passed!
 
 ### 3. Kapan memilih masing-masing pola?
 
