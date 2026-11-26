@@ -6,7 +6,7 @@
 - NIM: 362558302075
 - Kelas: 2E
 - Mata kuliah: Pemrograman Perangkat Bergerak, TRPL Poliwangi
-- Tautan repository dan commit: [ISI TAUTAN]
+- Tautan repository dan commit: https://github.com/stevenkl666/prak-arsitektur-tugas
 
 ## Cara Menjalankan
 
